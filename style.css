@@ -252,11 +252,12 @@ PHONE VERIFY START
 */
 
 div.inputbar1 select[id="town"]{
-    width: 85px;
+    width: 23%;
     height: 52px;
 }
 div.inputbar1 input[type="email2"]{
     width: 265px;
+    width: 77%;
     height: 50px;
     margin: 0 auto;
     margin-top: 20px;
@@ -344,7 +345,7 @@ div.inputbar1{
     margin: 0 auto;
 }
 div.inputbar1 input[type="email"]{
-    width: 300px;
+    width: 100%;
     height: 50px;
     margin: 0 auto;
     margin-top: 20px;
@@ -424,7 +425,7 @@ div.inputbar{
     display: inline-block;
 }
 div.inputbar input[type="email"]{
-    width: 336.5px;
+    width: 100%;
     height: 54px;
     display: inline-block;
     margin-top: 34px;
@@ -448,11 +449,12 @@ div.inputbar input[type="submit"]{
     border: 1px solid #8888884d;
     border-radius: 3px;
     padding: 8.2px 74.9px 8.2px 74.9px;
+    width: 49%;
     text-decoration: none;
     color: #4389f9;
 }
-a.skip-button,{
-    margin-right: 1.5px;
+a.skip-button {
+    margin-left: 7px;
 }
 a.next-button:hover,
 a.skip-button:hover,

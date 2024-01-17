@@ -6,7 +6,7 @@
 main{
     /* background: gray; */
     width: 100%;
-    /* height: 100vh; */
+    
 }
 
 /* 
@@ -17,7 +17,7 @@ CREATE ACCOUNT START
 
 div.inputbar-name{
     /* background-color: red; */
-    width: 84%;
+    width: 82%;
     margin: 0 auto;
     display: block;
 }
@@ -27,7 +27,7 @@ input.first{
 }
 div.inputbar-name input.input-name{
     width: 100%;
-    height: 54px;
+    height: 55px;
     display: inline-block;
     /* margin-top: 34px; */
     border: 1px solid #8888884d;
@@ -44,9 +44,15 @@ div.inputbar-name input.input-name:focus{
 div.angletag-crt-act{
     float: right;
     display: inline-block;
-    margin-top: 47px;
-    margin-right: 4px;
+    margin-top: 38px;
+    margin-right: 2px;
+    width: vw;
+    height: vh;
+    background-color: pink;
+    /* margin-right: 4px; */
 }
+
+
 
 /* 
 =====================================================================================
@@ -68,29 +74,29 @@ div.date{
 div.up-input,
 div.down-input{
     width: 100%;
-    height: 57px;
+    height: 55.5px;
     /* background-color: yellow; */
     border-radius: 5px;
 }
 div.block{
     /* background: green; */
     height: 100%;
-    width: 30%;
+    width: 30.5%;
     border-radius: 5px;
     float: left;
     display: inline-block;
 }
 div.twins{
-    margin-left: 18px;
+    margin-left: 15.5px;
 }
 div.up-input{
     margin-top: 34px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 select[name="month"]{
     width: 100%;
     height: 100%;
-    padding: 0 0 0 10px;
+    padding: 0 0 0 12px;
     font-family: roboto, "Noto Sans Myanmar UI", arial, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -99,6 +105,7 @@ select[name="month"]{
     color: #202124;
     border-radius: 5px;
     border: 1px solid #8888884d;
+    background-color: transparent;
 }
 select[name="month"]:focus{
     border: 2px solid #4389f9;
@@ -107,7 +114,7 @@ select[name="month"]:focus{
 input.input-date{
     width: 100%;
     height: 100%;
-    padding: 0 0 0 10px;
+    padding: 0 0 0 12px;
     font-family: roboto, "Noto Sans Myanmar UI", arial, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -117,6 +124,7 @@ input.input-date{
     display: inline-block;
     border-radius: 5px;
     border: 1px solid #8888884d;
+    background-color: transparent;
 }
 input.input-date:focus{
     border: 2px solid #4389f9;
@@ -134,22 +142,35 @@ select[name="gender"]{
     color: #202124;
     border-radius: 5px;
     border: 1px solid #8888884d;
+    background-color: transparent;
 }
 select[name="gender"]:focus{
     border: 2px solid #4389f9;
     outline-color: #4389f9;
 }
+
 div.text-info{
     margin-top: 10px;
 }
 div.text-info a.angle-info{
     font-family: roboto, "Noto Sans Myanmar UI", arial, sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 550;
     font-size: 14px;
     line-height: 20px;
-    color: #0b57d0;
+    color: #0b57d0b5;
     text-decoration: none;
+}
+
+div.adjust{
+    float: right;
+    display: block;
+    margin-top: 40px;
+    margin-right: 2px;
+    width: vw;
+    height: vh;
+    background-color: pink;
+    /* margin-right: 4px; */
 }
 
 /* 
@@ -229,13 +250,39 @@ PASSWORD START
 =====================================================================================
 */
 
+
+div.parent-password{
+    /* background: blue; */
+    max-width: 450px;
+    
+    margin: 0 auto;
+    
+    margin-top: 91px;
+    display: block;
+}
+div.firstbox-password{
+    /* background: brown; */
+    height: 74.1vh;
+    border-radius: 80x;
+    border: 1px solid #8888884d;
+    border-radius: 8px;
+}
+div.adjust-password{
+    float: right;
+    display: block;
+    margin-top: 47px;
+    padding-bottom: px;
+    /* margin-right: 2px; */
+    
+    background-color: pink;
+}
 div.checkbox{
-    margin-top: 10px;
+    margin-top: 13px;
 }
 div.checkbox>input[type="checkbox"]{
     float: left;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 18px;
     margin-right: 20px;
 }
 
@@ -301,10 +348,13 @@ a.nextpage,
 div.inputbar1 input[type="submit"]{
     text-decoration: none;
     padding: 9px 24px 9px 24px;
+    /* width: 103%; */
     background: rgb(84, 84, 254);
     color: #ffffff;
     border-radius: 5px;
     border: none;
+    display: inline-block;
+    
 }
 a.nextpage:hover{
     background: #0557db;
@@ -396,7 +446,7 @@ div.parent{
 }
 div.firstbox{
     /* background: brown; */
-    height: 71vh;
+    height: 71.4vh;
     border-radius: 80x;
     border: 1px solid #8888884d;
     border-radius: 8px;
@@ -733,12 +783,13 @@ Main Style End
 MAIN-FOOTER START
 */
 div.lastbox1{
-    /* width: 200px; */
-    /* height: 48px; */
     padding: 10px 0 10px 0;
+    
 }
 select.language{
     background: #ffffff;
+    
+    width: 40%;
     color: #000000;
     font-size: 13.33px;
     font-family: arial;
@@ -760,13 +811,24 @@ a.down{
     font-weight: 400;
     color: #202124;
     text-decoration: none;
+
 }
 a.help{
-    margin-left: 105px;
+    /* margin-left: 105px; */
 }
 option.option{
     background: #ffffff;
 }
+div.nav-block{
+    display: inline-block;
+    /* background-color: peru; */
+    
+    width: 60%;
+    text-align: right;
+
+}
+
+
 /*
 MAIN-FOOTER END
 */
@@ -794,7 +856,7 @@ RESPONSIVE START
 =====================================================================================
 */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     *{
         padding: 0;
         margin: 0;
@@ -805,7 +867,7 @@ RESPONSIVE START
 
     div.inputbar-name{
         /* background-color: red; */
-        width: 84%;
+        width: 100%;
        
         display: block;
     }
@@ -832,33 +894,145 @@ RESPONSIVE START
     div.angletag-crt-act{
         float: right;
         display: inline-block;
-        margin-top: 47px;
+        margin-top: 42px;
         /* margin-right: 4px; */
     }
-    div.lastbox1{
-        /* background-color: rgb(0, 255, 85); */
-        width: 84%;
-        margin-left: 0;
-        margin: 0 auto;
-        display: block;
-    }
+    
 
     /* CREATE ACCOUNT HTML END */
+
+
+    /* BASICS HTML START */
+
+
+div.date{
+    /* background-color: #000000; */
+    width: 100%;
+}
+div.up-input,
+div.down-input{
+    max-width: 100%;
+    height: 55.5px;
+    /* background-color: yellow; */
+    border-radius: 5px;
+    display: block;
+}
+div.block{
+    /* background: green; */
+    height: 100%;
+    width: 30.5%;
+    /* min-width: 20%; */
+    border-radius: 5px;
+    float: left;
+    /* align-items: flex-end; */
+    /* display: inline-block; */
+}
+div.twins{
+    margin-left: 17px;
+}
+div.up-input{
+    margin-top: 34px;
+    margin-bottom: 16px;
+}
+select[name="month"]{
+    /* width: 100%; */
+    /* height: 100%; */
+    padding: 0 0 0 12px;
+    font-family: roboto, "Noto Sans Myanmar UI", arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #202124;
+    border-radius: 5px;
+    border: 1px solid #8888884d;
+    background-color: transparent;
+}
+select[name="month"]:focus{
+    border: 2px solid #4389f9;
+    outline-color: #4389f9;
+}
+input.input-date{
+    /* width: 100%; */
+    /* height: 100%; */
+    padding: 0 0 0 12px;
+    font-family: roboto, "Noto Sans Myanmar UI", arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #202124;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid #8888884d;
+    background-color: transparent;
+}
+input.input-date:focus{
+    border: 2px solid #4389f9;
+    outline-color: #4389f9;
+}
+select[name="gender"]{
+    /* width: 100%; */
+    /* height: 100%; */
+    padding: 0 0 0 10px;
+    font-family: roboto, "Noto Sans Myanmar UI", arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #202124;
+    border-radius: 5px;
+    border: 1px solid #8888884d;
+    background-color: transparent;
+}
+select[name="gender"]:focus{
+    border: 2px solid #4389f9;
+    outline-color: #4389f9;
+}
+
+div.text-info{
+    margin-top: 10px;
+}
+div.text-info a.angle-info{
+    font-family: roboto, "Noto Sans Myanmar UI", arial, sans-serif;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0b57d0b5;
+    text-decoration: none;
+}
+
+div.adjust{
+    float: right;
+    display: block;
+    margin-top: 40px;
+    margin-right: 2px;
+    width: vw;
+    height: vh;
+    /* background-color: pink; */
+    /* margin-right: 4px; */
+}
+
+    /* BASICS HTML END */
 
 
 
     /* RECOVERY HTML START */
 
-    div.parent{
+    div.parent,
+    div.parent-password{
         /* background: blue; */
-        /* max-width: 450px; */
-        height: 745px;
+        max-width: 84%;
+        
         margin-top: 0;
         margin-bottom: 0;
 
     }
-    div.firstbox{
+    div.firstbox,
+    div.firstbox-password{
         /* background: brown; */
+        max-width: 100%;
         height: 71vh;
         
         border: none;
@@ -867,8 +1041,8 @@ RESPONSIVE START
     div.main-box{
         text-align: center;
         /* background-color: #0000ff; */
-        height: 100%;
-        width: 81%;
+        /* height: 100%; */
+        width: 100%;
         margin: 0 auto;
     }
     div.main-box p.text{
@@ -881,7 +1055,7 @@ RESPONSIVE START
     }
     div.inputbar{
         /* background-color: red; */
-        width: 84%;
+        width: 100%;
         margin-left: 0;
         margin: 0 auto;
         display: block;
@@ -889,9 +1063,9 @@ RESPONSIVE START
     div.inputbar input[type="email"]{
        
         width: 100%;
-        height: 54px;
+        height: 55px;
         display: inline-block;
-        margin-top: 65px;
+        margin-top: 35px;
         border: 1px solid #8888884d;
         border-radius: 3px;
         padding-left: 15px;
@@ -903,7 +1077,7 @@ RESPONSIVE START
         outline-color: #4389f9; 
     }
     nav.button{
-        margin-top: 60px;
+        margin-top: 32.5px;
         /* background-color: yellow; */
     }
     a.next-button,
@@ -911,13 +1085,13 @@ RESPONSIVE START
         display: inline-block;
         border: 1px solid #8888884d;
         border-radius: 3px;
-        width: 48.5%;
+        width: 49.6%;
         text-align: center;
         text-decoration: none;
         color: #4389f9;
     }
     a.skip-button{
-        margin-left: px;
+        margin-left: 3px;
     }
     a.next-button:hover,
     a.skip-button:hover{
@@ -927,29 +1101,31 @@ RESPONSIVE START
 
     div.lastbox1{
         /* background-color: gray; */
-        
-        align-items: center;
-        padding: 10px 0 0 10px 0;
+        /* align-items: center; */
+        padding: 5px 0 5px 0;
+        margin: 0 auto;
+        margin-top: 15.8vh;
     }
     select.language{
         background: #ffffff;
         color: #000000;
         font-size: 13.33px;
         font-family: arial;
-        padding: 11px 5px 11px 0;
+        /* padding: 11px 5px 11px 0; */
+        width: 40%;
         border: none;
         cursor: pointer;
         border-radius: 5px;
-        display: block;
-        margin-bottom: 25px;
+        display: inline-block;
+        margin-bottom: 0;
     }
     select.language:focus{
         background: #4389f96e;
         outline: none;
     }
     a.down{
-        text-align: center;
-        margin-left: 0;
+        
+        
         font-family: roboto, "Noto Sans Myanmar UI", arial, sans-serif;
         font-size: 12px;
         line-height: 16px;
@@ -957,13 +1133,22 @@ RESPONSIVE START
         font-weight: 400;
         color: #202124;
         text-decoration: none;
+        
     }
     a.help{
-        margin-left: 0;
+        margin-left: 0vw;
     }
     option.option{
         background: #ffffff;
         cursor: pointer;
+    }
+    div.nav-block {
+        display: inline-block;
+        /* background-color: peru; */
+        /* height: 100%; */
+        width: 60%;
+        text-align: right;
+    
     }
     /* RECOVERY HTML END */
 

@@ -665,6 +665,15 @@ div.div1 p.paragraph1{
 div.div1 p.paragraph2{
     margin-bottom: 12px;
 }
+div.div1 a.angletag{
+    text-decoration: none;
+    color: #4389f9;
+    font-family: roboto, "Noto Sans Myanmar UI", arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: 700;
+}
 
 div.div1 p.titre{
     font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
@@ -681,14 +690,21 @@ div.div1 ol.list-style{
     margin-bottom: 12px;
 }
 select.select{
-    color: blue;
+    color: #4389f9;
     border: none;
     cursor: pointer;
-    width: 106px;
-    height: 35.5px;
+    width: 110px;
+    height: 38px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+   
 }
 select.select:focus{
     background: #4389f96e;
+    border-radius: 5px;
+}
+select.select:hover{
+    background: #88aeeb22;
     border-radius: 5px;
 }
 

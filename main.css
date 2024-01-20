@@ -193,8 +193,9 @@ nav.header-nav span.material-symbols-outlined{
 }
 
 img.image-account{
-    width: 35px;
-    height: auto;
+    width: 33px;
+
+    height: 30px;
     border-radius: 50%;
     padding-top: 5px;
     display: inline-block;
@@ -352,7 +353,8 @@ div.introduction{
 img.logo{
     border-radius: 50%;
     width: 96px;
-    height: auto;
+    width: 100px;
+    height: 100px;
     margin-top: 89px;
 }
 h1.title{

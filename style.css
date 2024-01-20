@@ -217,7 +217,7 @@ input.radiobox-address{
 p.email-adjust{
     /* color: #888888bb; */
     display: inline-block;
-    margin-top: 38px;
+    margin-top: 10px;
 }
 a.adjust-angle-tag{
     /* border: 1px solid #000000; */
@@ -411,14 +411,26 @@ div.inputbar1 input[type="email"]:focus{
 }
 div.angletag1{
     float: right;
+    /* background-color: red; */
+    /* margin-left: 150px; */
     display: inline-block;
-    margin-top: 40px;
-    margin-right: 8.5px;
+    /* margin-top: 10px; */
+    /* margin-right: 8.5px; */
+
 }
 p.email1{
     color: #888888bb;
     display: inline-block;
+    /* display: flex; */
+    /* float: left; */
+    margin-top: 10px;
+}
+nav.align {
     margin-top: 40px;
+    /* background-color: blue; */
+    height: 6vh;
+    /* align-items: center; */
+    /* display: flex; */
 }
 
 /* 
@@ -556,7 +568,7 @@ div.angletag{
     float: right;
     display: inline-block;
     margin-top: 50px;
-    margin-right: 8.5px;
+    /* margin-right: 8.5px; */
 }
 a.nextpage{
     text-decoration: none;
@@ -584,10 +596,11 @@ TERMS AND PRIVACY START
 
 div.parent1{
     /* background: aqua; */
-    width: 451px;
-    margin-left: 534px;
+    max-width: 451px;
+    margin: auto;
+    /* margin-left: 534px; */
     margin-top: 30px;
-    display: inline-block;
+    display: block;
 }
 div.firstbox1{
     /* background: rgba(255, 166, 0, 0.408); */
@@ -641,20 +654,18 @@ div.div1{
     
 }
 div.div1 p.paragraph1{
-    margin-bottom: 15px;
-}
-div.div1 p.paragraph2{
-    margin-bottom: 12px;
-}
-a.angletag{
-    text-decoration: none;
-    color: #4389f9;
+    margin-bottom: 10px;
     font-family: roboto, "Noto Sans Myanmar UI", arial, sans-serif;
     font-size: 14px;
     line-height: 20px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
+    color: #5f6368;
 }
+div.div1 p.paragraph2{
+    margin-bottom: 12px;
+}
+
 div.div1 p.titre{
     font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
     font-size: 15.5px;
@@ -691,7 +702,7 @@ div.div1 div.titre1{
     font-style: normal;
     font-weight: 700;
     color: #202124;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     /* background-color: blue; */
     width: 100%;
     height: 30px;
@@ -699,13 +710,14 @@ div.div1 div.titre1{
 }
 div.image{
     /* background-color: red; */
-    width: 10%;
+    width: 8%;
     height: 100%;
     display: inline-block;
 }
 div.image>span.material-symbols-outlined{
     display: inline-block;
     float: left;
+    color:#888;
 }
 div.text-title{
     /* background-color: green; */
@@ -725,38 +737,82 @@ p.save{
     font-style: normal;
     font-weight: 400;
     color: #202124; */
-    padding-bottom: 14px;
+    /* height: 20px; */
+    align-items: center;
+    display: flex;
+    padding-bottom: 10px;
     margin-top: 15px;
     border-bottom: 1px solid #8888884d;
 }
 input.radiobox{
-    width: 50px;
+    width: 20px;
+    margin-left: 5px;
+    margin-right: 20px;
+    height: 30px;
+    
 }
 p.checkbox{
-    margin-top: 29px;
+    margin-top: 25px;
 }
 p.plus{
     margin-top: 10px;
     margin-bottom: 20px;
 }
+p.plus a.angletag{
+    text-decoration: none;
+    color: #4389f9;
+    font-family: roboto, "Noto Sans Myanmar UI", arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+
 /* 
 RADIO BOX SPECIFICATION END
 */
 
 div.par3{
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 52px;
+    font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: 400;
+    color: #202421;
+   /* display: flex; */
+   /* align-items: center; */
 }
-input[type="checkbox"] {
+div.par3 p.paragraph1 {
+    margin-bottom: 20px;
     font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
     font-size: 14px;
     line-height: 20px;
     font-style: normal;
     font-weight: 400;
-    color: #202124;
-    width: 50px;
+    color: #202421;
 }
-a.button-alt{
+input[type="checkbox"] {
+    height: 20px;
+    width: 50px;
+    align-items: center;
+    margin-top: px;
+    /* display: flex; */
+}
+nav.button-end a.angletag{
+    float: left;
+    text-decoration: none;
+    color: #4389f9;
+    font-family: roboto, "Noto Sans Myanmar UI", arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: 700;
+}
+nav.button-end a.button-alt{
+    float: right;
     margin-left: 217px;
     padding: 9px 23px;
     color: #ffffff;
@@ -773,7 +829,12 @@ a.button-alt:hover{
     box-shadow: 0 0 5px 1px #0000002a;
 }
 nav.button-end{
+    /* background-color: green; */
+    height: 6vh;
     margin-bottom: 70px;
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 /*
 Main Style End
@@ -852,7 +913,7 @@ TERMS AND PRIVACY END
 
 /* 
 =====================================================================================
-RESPONSIVE START
+RESPONSIVE DESIGN START
 =====================================================================================
 */
 
@@ -1038,14 +1099,14 @@ div.adjust{
         border: none;
         
     }
-    div.main-box{
+    div.main-box, div.main-box1 {
         text-align: center;
         /* background-color: #0000ff; */
         /* height: 100%; */
         width: 100%;
         margin: 0 auto;
     }
-    div.main-box p.text{
+    div.main-box p.text, div.main-box1 p.text{
         font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
         font-size: 16px;
         line-height: 24px;
@@ -1053,7 +1114,7 @@ div.adjust{
         font-weight: 400;
         color: #202124;
     }
-    div.inputbar{
+    div.inputbar, div.inputbar1{
         /* background-color: red; */
         width: 100%;
         margin-left: 0;
@@ -1153,11 +1214,58 @@ div.adjust{
     /* RECOVERY HTML END */
 
 
+    /* TERMS HTML START */
+
+
+    div.divparent{
+        /* background: rgba(255, 0, 0, 0.582); */
+        width: 100%;
+        margin: 0 auto;
+    }
+    div.parent1{
+        /* background: aqua; */
+        max-width: 84vw;
+        
+        margin: auto;
+        
+        margin-top: 0;
+        display: block;
+    }
+    div.firstbox1{
+        /* background: rgba(255, 166, 0, 0.408); */
+        
+        border: none;
+        border-radius: 8px;
+        display: block;
+    }
+    nav.button-end a.angletag{
+        float: left;
+        margin-top: 10px;
+    }
+    nav.button-end a.button-alt{
+        float: right;
+      
+        /* margin-left: 360px; */
+    }
+    
+    nav.button-end{
+        width: 100%;
+        /* background-color: green; */
+        height: 6vh;
+        margin-bottom: 70px;
+        display: block;
+        
+    }
+
+
+    /* TERMS HTML END */
+
+
     
 }
 
 /* 
 =====================================================================================
-RESPONSIVE END
+RESPONSIVE DESIGN END
 =====================================================================================
 */
